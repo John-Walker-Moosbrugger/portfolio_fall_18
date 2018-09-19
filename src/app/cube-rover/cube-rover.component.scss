@@ -1,0 +1,110 @@
+.case {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+    max-width: 114rem;
+    }
+    margin: 0 5rem 0 5rem;
+}
+
+.float {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2rem;
+    grid-gap: 0rem 3rem;
+    box-shadow: 0px 3px 2rem rgba(0, 0, 0, .16);
+
+    padding-bottom: 15rem;
+
+    &__top {
+        background-color: #FFDE3E;
+        content: "";
+        grid-column-start: 1;
+        grid-column-end: 13;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            width: 30rem;
+            height: 50rem;
+            position: absolute;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            background-color: white;
+        }
+    }
+
+    &__header {
+        grid-column-start: 1;
+        grid-column-end: 13;
+
+        text-align: center;
+
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    &__subtitle {
+        grid-column-start: 1;
+        grid-column-end: 13;
+
+
+        background-color: #FFDE3E;
+
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+
+        position: relative;
+        overflow: hidden;
+
+        &--text {
+            z-index: 10;
+        }
+
+        &::after {
+            content: "";
+            width: 30rem;
+            height: 50rem;
+            position: absolute;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            background-color: white;
+        }
+    }
+
+    &__text {
+        grid-column-start: 3;
+        grid-column-end: 11;
+
+        margin-bottom: 5rem;
+    }
+
+    &__image {
+        grid-column-start: 2;
+        grid-column-end: 12;
+        width: 100%;
+        
+        margin-bottom: 5rem;
+    }
+
+    &__four {
+        grid-column-start: 2;
+        grid-column-end: 12;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+
+        &--image {
+            width: 100%;
+        }
+    }
+}

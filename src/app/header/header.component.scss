@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+
+    &__hero {
+
+        &--link {
+            color: #262626;
+            text-decoration: none;
+        }
+        
+    }
+
+    &__nav {
+
+        &--link {
+            color: #262626;
+            text-decoration: none;
+            margin-left: 4rem;
+        }
+    }
+}
