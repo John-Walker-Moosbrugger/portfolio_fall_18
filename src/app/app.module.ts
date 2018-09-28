@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CubeRoverComponent } from './cube-rover/cube-rover.component';
+import { OffbeatComponent } from './offbeat/offbeat.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CubeRoverComponent } from './cube-rover/cube-rover.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    CubeRoverComponent
+    CubeRoverComponent,
+    OffbeatComponent
   ],
   imports: [
     BrowserModule,
