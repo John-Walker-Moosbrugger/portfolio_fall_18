@@ -130,10 +130,11 @@ body {
 
         margin-top: 4rem;
 
+        list-style-type: none;
+
         &--item {
             margin-top: 2rem;
         }
-
     }
 
     &__top {
@@ -226,18 +227,51 @@ body {
         width: 100%;
 
         margin-top: 6rem;
+
+        &--sm {
+            grid-column-start: 4;
+            grid-column-end: 10;
+        }
         
     }
 
-    &__four {
+
+
+    &__three {
         grid-column-start: 2;
         grid-column-end: 12;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3rem;
 
-        &--image {
-            width: 100%;
+        display: flex;
+        flex: 1 1 0;
+
+        &--half {
+            flex: .5;
         }
+
+        &--card {
+            flex: 1;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--image {
+                width: 50%;
+            }
+
+            &--text {
+                text-align: center;
+                margin-top: 4rem;
+            }
+        }
+    }
+}
+
+.video__container {
+    grid-column-start: 2;
+    grid-column-end: 12;
+
+    &--vid {
+        width: 100%;
     }
 }
