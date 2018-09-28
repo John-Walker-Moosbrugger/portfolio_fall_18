@@ -65,6 +65,12 @@ body {
     &__tiny {
         font-size: 1.6rem;
         letter-spacing: 1px;
+        text-decoration: none;
+
+        &:visited {
+            color: #262626;
+            
+        }
     }
 
     &__big {
@@ -270,8 +276,23 @@ body {
 .video__container {
     grid-column-start: 2;
     grid-column-end: 12;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-top: 4rem;
+
 
     &--vid {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
     }
+}
+
+.link {
+    color: #262626;
+    font-weight: 800;
+    text-decoration: none;
 }
