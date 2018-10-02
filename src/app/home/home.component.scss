@@ -1,20 +1,23 @@
 //HOME SECTION
-
+ 
 .splash {
     height: 100vh;
+    min-height: 30rem;
     position: relative;
 
     &__title {
         position: absolute;
         left: 50%;
-        top: 25vh;
+        top: 30vh;
         transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
     }
 
     &__link {
         position: absolute;
         left: 50%;
-        top: 90vh;
+        bottom: 10vh;
         transform: translateX(-50%);
 
         &:after {
@@ -35,11 +38,11 @@
         position: absolute;
         z-index: -10;
         content: "";
-        width: 100%;
-        height: 100%;
+        width: 400%;
+        height: 100vh;
         background-color: #FFDE3E;
-        clip-path: polygon(0 0, 40% 0,  0 100%);
-
+        transform-origin: bottom left;
+        transform: rotate(-50deg);
     }
 }
 
@@ -188,6 +191,8 @@
         box-shadow: 0px 0px 4rem rgba(0,0,0,.14);
         transform: translateY(-5rem);
         z-index: 20;
+        display: flex;
+        flex-direction: column;
     }
 
     &__header {
@@ -195,3 +200,11 @@
         margin-bottom: 4rem;
     }
 }
+
+#center_btn {
+    width: 100%;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 4rem;
+}
+

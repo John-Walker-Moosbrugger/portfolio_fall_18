@@ -13,6 +13,7 @@ import { BusinessComponent } from './business/business.component';
 import { RadpiperComponent } from './radpiper/radpiper.component';
 import { HyperloopComponent } from './hyperloop/hyperloop.component';
 import { DrafterComponent } from './drafter/drafter.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DrafterComponent } from './drafter/drafter.component';
     BusinessComponent,
     RadpiperComponent,
     HyperloopComponent,
-    DrafterComponent
+    DrafterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

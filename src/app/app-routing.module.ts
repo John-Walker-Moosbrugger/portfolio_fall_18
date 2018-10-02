@@ -8,6 +8,7 @@ import { BusinessComponent } from './business/business.component';
 import { RadpiperComponent } from './radpiper/radpiper.component';
 import { DrafterComponent } from './drafter/drafter.component';
 import { HyperloopComponent } from './hyperloop/hyperloop.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'hyperloop',
     component: HyperloopComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: '**',
