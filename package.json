@@ -20,6 +20,8 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@ng-toolkit/serverless": "^1.1.41",
+    "@ng-toolkit/universal": "^1.1.41-beta.110",
     "core-js": "^2.5.4",
     "firebase-tools": "^4.2.1",
     "rxjs": "~6.2.0",
