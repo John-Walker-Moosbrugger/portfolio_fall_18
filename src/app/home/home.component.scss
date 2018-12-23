@@ -1,66 +1,19 @@
 //HOME SECTION
- 
-.splash {
-    height: 100vh;
-    min-height: 30rem;
-    position: relative;
-
-    &__title {
-        position: absolute;
-        left: 50%;
-        top: 30vh;
-        transform: translateX(-50%);
-        width: 100%;
-        text-align: center;
-    }
-
-    &__link {
-        position: absolute;
-        left: 50%;
-        bottom: 10vh;
-        transform: translateX(-50%);
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 3rem;
-            height: 3rem;
-            border: 4px solid #262626;
-            border-top: none;
-            border-left: none;
-            transform: translateX(-50%) translateY(2rem) rotate(45deg);
-        }
-    }
-
-    &:after {
-        position: absolute;
-        z-index: -10;
-        content: "";
-        width: 400%;
-        height: 100vh;
-        background-color: #FFDE3E;
-        transform-origin: bottom left;
-        transform: rotate(-50deg);
-    }
-}
-
-
 .button__small {
     color: #262626;
     text-decoration: none;
     position: relative;
 }
 
-
-
+#header {
+    max-width: 114rem;
+    margin: 0 auto;
+}
 
 //PORTFOLIO SECTION
 .portfolio {
     display: flex;
     justify-content: space-around;
-    margin-top: 15rem;
     margin-bottom: 30rem;
 
     &__container {
